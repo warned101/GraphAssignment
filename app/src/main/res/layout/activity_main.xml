@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/x_value"
+        android:hint="X_VALUE"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/y_value"
+        android:hint="Y_VALUE"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/x_value"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="INSERT"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/y_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_below="@id/btn_insert"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/graph" />
+
+</RelativeLayout>
